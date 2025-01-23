@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+        <title>A11y World!</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <img src="a11y-world-logo.png" alt="" />
+        <img src="a11y-test.png" alt="" />
+
+        <h1>What is A11y?</h1>
+        <p>A11y is shorthand for accessibility, there are 11 letters between the A and Y.</p>
+
+        <select aria-label="Hello">
+            <option></option>
+            <option>something</option>
+        </select>
+
+        <Select>
+            <option></option>
+            <option>something</option>
+        </Select>
+
+        <MyButton></MyButton>
+
+        <MySelect></MySelect>
+
+        <My.Select label="Test"></My.Select>
+
+        <My.Select></My.Select>
+        <My.Select label="my select"></My.Select>
+
+        <AutoAdvance.Button></AutoAdvance.Button>
+        <AutoAdvance.Button label="auto advance"></AutoAdvance.Button>
+
+        <a href="#" aria-label="hello"></a>
+
+        <ul>
+            <li><Thumbnail image="img1.png" />First Bullet</li>
+            <li><Thumbnail image="img2.png" caption="test" />Second Bullet</li>
+            <li><a href="#third">Third Bullet</a></li>
+            <li><Thumbnail image="img4.png" />Fourth Bullet</li>
+            <div class="list-item">This is not an allowed element inside the unordered list!</div>
+            <li><MyButton id="MyButton"></MyButton></li>
+        </ul>
+
+        <footer>
+            <a href="/"><i class="fa fa-home"></i></a>
+            <a href="privacy.html"><i class="fa fa-privacy"></i></a>
+            <a href="contact-us.html"><i class="fa fa-email"></i></a>
+            <AxeLink href="contact-us.html"><i class="fa fa-email"></i></AxeLink>
+            <AxeLink href="contact-us.html" aria-label="TEST"><i class="fa fa-email"></i></AxeLink>
+            <AxeLink href="contact-us.html" label="TEST"><i class="fa fa-email"></i></AxeLink>
+        </footer>
+
+        <iframe id="myiframe" src="test.html"></iframe>
+
+    </body>
+    
+</html>
+
+

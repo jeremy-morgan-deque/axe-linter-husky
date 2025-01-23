@@ -1,0 +1,28 @@
+rules:
+  html-has-lang: false
+tags: # Disallow all rules other than WCAG 2.0 A, WCAG 2.0 AA
+  - wcag2a
+  - wcag2aa
+exclude:
+  - node_modules/**
+  - exclude/**
+  - axe-linter-configurations/**
+global-components:
+  AxeLink: a # Lint <AxeLink> as though it was an <a>
+  LikeButton: 
+    element: button
+    attributes:
+      - label: <text>
+  Thumbnail:
+    element: img
+    attributes:
+      - caption: alt
+  btn-test: 
+    element: button
+    attributes:
+      - label: <text>
+  Select: select
+  Button:
+    element: button
+global-libraries:
+  - 'react-native' # Run React Native rules
