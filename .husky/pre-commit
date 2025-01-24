@@ -33,8 +33,7 @@ for i in $(git status --porcelain | sed s/^...//); do
       fi
       # execute axe DevTools Linter Connector
       ~/Code/bin/axe-linter-connector-macos -s $i -d . --api-key $AXE_LINTER_API_KEY --config ~/Code/linter-demo/axe-linter.yml --url $AXE_LINTER_SERVER_URL
-      #axe-linter-connector-macos -s $i -d . --api-key 9924a086-dae2-4546-938a-f49fcfaeef91 --config ./axe-linter.yml --url https://axe-linter-adp.dequecloud.com
-
+      
       if [ ! -f "$OutFile" ];then
          echo "$OutFile Does Not Exist"
          exit 2
